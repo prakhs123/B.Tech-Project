@@ -1,0 +1,1223 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf140
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 Calibri;\f2\fswiss\fcharset0 Helvetica;
+\f3\fnil\fcharset0 ArialUnicodeMS;\f4\fnil\fcharset0 AppleSymbols;\f5\froman\fcharset0 Times-Roman;
+\f6\ftech\fcharset77 Symbol;}
+{\colortbl;\red255\green255\blue255;\red67\green67\blue67;\red191\green191\blue191;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid101\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww25600\viewh13320\viewkind1
+\deftab720
+\pard\pardeftab720\sl400\sa400\qc
+
+\f0\fs72 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+\
+Solving Computationally Hard problems (optimisation problems, NP hard problems)\
+\
+\
+
+\fs26 \cf2 \
+\pard\pardeftab720\sl400\sa400
+\cf2 \
+\pard\pardeftab720\qr
+
+\fs36 \cf0 Submitted By:\
+Prakhar Jain\
+10400EN002 (IDD - 18)
+\fs26 \cf2 \
+\pard\pardeftab720\sl400\sa400
+\cf2 \
+\pard\pardeftab720\sl400\sa400\qc
+
+\fs72 \cf0 Acknowledgement\
+\pard\pardeftab720\sl400\sa400
+
+\fs28 \cf0 I have taken efforts in this project. However, it would not have been possible without the kind support and help of many individuals and I would like to extend my sincere thanks to all of them.\
+\pard\pardeftab720\sl400
+\cf0 \expnd0\expndtw0\kerning0
+I am highly indebted to Prof. A. K. Agrawal for their guidance and constant supervision as well as for providing necessary information regarding the project & also for their support in completing the project.\
+I would like to express my gratitude towards my parents & friends for their kind co-operation and encouragement which help me in completion of this project.\
+\
+I would like to express my special gratitude and thanks to department of Computer Science IIT BHU persons for giving me such attention and time.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl400\qc
+
+\fs72 \cf0 Motivation\
+
+\fs28 \
+\pard\pardeftab720\sl400
+\cf0 I have done semester long project of Automata under the guidance of Prof A. K. Agrawal last semester which encouraged me in going through the limits of computability. In that project, I learned about principles of Turing Machine and Complexity Theory apart from the basic classes of Languages and their application like Regular Languages, Context Free Grammars. Now after learning about the limitations of computability, I was motivated to give my times on solving problems which are hard and learning about algorithms that exist in this field.\
+\
+I have a experience of programming competitions where we are given algorithmic problems to solve in time limit. So, I had a plan to take as many of such hard problems possible and give solutions using the knowledge learned from the algorithms used in solving these.\
+\
+Thus, I ended up having this project of solving many hard problems and learning algorithms related to it.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\sl400\qc
+
+\fs72 \cf0 Index\
+\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 S. No.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Topic
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Pg No.
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 1.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Turing Machine, NP and P
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 5
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 2.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Knapsack Problem
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 11
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 3.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Strategies Used: DP, Greedy, Branch and Bound
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 12
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 4.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Travelling Salesman Problem
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 14
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 5.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Constraint Programming
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 17
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 6.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 Source Codes
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 20
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clheight417 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clheight417 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clheight417 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 7.
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 References
+\fs72 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+
+\fs28 \cf0 24
+\fs72 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth1140\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth5900\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth1280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf3 \clbrdrl\brdrs\brdrw20\brdrcf3 \clbrdrb\brdrs\brdrw20\brdrcf3 \clbrdrr\brdrs\brdrw20\brdrcf3 \clpadl100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\sl400\qc
+\cf0 \cell \lastrow\row
+\pard\pardeftab720\sl400\qc
+\cf0 \
+\
+\
+\
+\
+\
+\
+Turing Machine\
+\pard\pardeftab720
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+Turing Machine can compute\'a0 any function that can be computed by a physically harness able process of the natural world\
+\'a0\
+To prove that a model has more or equal power than any other model, we use simulation of one model over the other\
+\'a0\
+Turing Machine is simple and universal model of computation\
+Many more models have been studied and are found to be equivalent\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2014-11-20 at 12.48.15 am.png \width9680 \height7160
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \
+\
+
+\f1\fs30 Turing Machine\'92s 	a\expnd0\expndtw0\kerning0
+cceptance is defined as the set of finite configurations C1,C2,\'85,CK.\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+A TM which accepts or rejects on all input is called deciders.\
+Multi tape TM and non deterministic TM has same power [proof Automata VL]\
+Turing recognizable(Recursively Enumerable) and Turing decidable(Recursive) language\
+Recursively Enumerable languages are not closed under complementation and difference. Recursive Languages are not closed under homomorphism\
+Universal Turing Machine which takes Turing Machine M and its input w and accepts only if M accepts w; UTM is recursively enumerable and not recursive language.\
+There are more languages than integers. But there are no more TMs than integers\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2014-11-20 at 12.56.06 am.png \width8600 \height5920
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \
+\
+
+\f1\fs30 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Consider the diagonalization language Ld = \{w | w is the ith string, and the i-th Turing Machine does not accept w\}\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 {{\NeXTGraphic Screen Shot 2014-11-20 at 12.59.29 am.png \width7580 \height5700
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \
+\
+\pard\pardeftab720
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+Rice's Theorem talks about the properties of languages. This also applies to programs. 
+\f3\fs24 \expnd0\expndtw0\kerning0
+\'a0
+\f1\fs30 \expnd0\expndtw0\kerning0
+That tells us that any nontrivial question about\'a0 what a program does will also be undecidable.\'a0 I want to emphasize \'93about\'a0 what a program does.\'94
+\f3\fs24 \expnd0\expndtw0\kerning0
+\'a0
+\f1\fs30 \expnd0\expndtw0\kerning0
+There are lots of questions about what a program\'a0 *looks like* that are decidable, for example, I can tell whether a program uses\'a0 more than 20 variable names.\'a0 But that\'92s not a question about what a program\'a0 does.\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc
+
+\f0\fs72 \cf0 \expnd0\expndtw0\kerning0
+NP and P\
+\pard\pardeftab720
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+The class P of problems or languages that can be solved by a\'a0 Turing machine [Deterministic Time Bounded] that runs in polynomial time, as a function of its input size. \'a0 We also meet the class NP, which is problems that can be solved by a Turing\'a0 machine that is nondeterministic, but has a polynomial time bound along each\'a0 branch.\
+\'a0\
+NP is defined in terms of nondeterministic Turing machines.\'a0 The running time\'a0 of a nondeterministic Turing machine is the maximum number of moves it\'a0 takes along any branch, that is making any sequence of choices. If there is a polynomial bound on that time, then the nondeterministic machine\'a0 is said to be polynomial time-bounded.\
+\'a0\
+NP complete problems are in NP and if it is in P then every problem in NP is in P\
+There is a polytime time reduction from all language in NP to this language\
+\'a0\
+NP complete problems are both NP hard and NP\
+Cook Theorem states that SAT problem is NP Complete\
+\'a0NP Hard problems if are in P then P = NP. \
+\'a0\
+Confusion between NP complete and NP Hard:\
+\pard\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+A\'a0set\'a0or\'a0property\'a0of\'a0computational\'a0search\'a0problems.\'a0A\'a0problem\'a0is NP -hard\'a0if\'a0solving\'a0it\'a0in\'a0polynomial\'a0time\'a0would\'a0make\'a0it\'a0possible\'a0to solve\'a0all\'a0problems\'a0in\'a0class\'a0NP\'a0in\'a0polynomial\'a0time.\'a0
+\b0 \expnd0\expndtw0\kerning0
+\
+
+\b \expnd0\expndtw0\kerning0
+Some\'a0NP-hard\'a0problems\'a0are\'a0also\'a0in\'a0NP\'a0(these\'a0are\'a0called\'a0"\'a0NP-complete"),\'a0some\'a0are\'a0not.
+\b0 \expnd0\expndtw0\kerning0
+\
+\
+Knapsack Problem is NP-Complete\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2014-11-20 at 1.04.17 am.png \width7560 \height6140
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+Search problems are those problems in which we are able to find solution or report none, and we can check that the solution is correct in polynomial time\
+\'a0\
+NP is class of all search problem\
+P is class of all search problems solvable in polynomial time\
+\'a0\
+NP problems can be solved by non deterministic Turing machine in polynomial time.\uc0\u8232 Non Deterministic Turing Machine:\u8232 It always guesses correctly. It was always know which state to go.\
+\'a0\
+Eg:\
+Imagine for a set of linear inequalities, we need a 0-1 solution (Inter Linear Programming ILP)\
+We have n variables\uc0\u8232 With the help of ND machine, we can create an array of size n which on initialization contains solution [guesses the correct solution of all variables]\
+In contrast to what we do in initialization of array which initializes to all zeroes\
+If we can reduce a problem P1 to another problem P2 in polytime, then we conclude that P2 is as hard as P1\
+Cook Reduction/ Polytime Reduction:\
+\pard\pardeftab720\li720
+\cf0 \expnd0\expndtw0\kerning0
+Polynomial number of standard computation steps\
+Polynomial number of calls to P2\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+If SAT polytime reduces to Y, then Y is intractable\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 {{\NeXTGraphic Screen Shot 2014-11-20 at 1.03.47 am.png \width8940 \height6740
+}¬}\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+\cf0 \
+\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f1\fs36 \cf0 \expnd0\expndtw0\kerning0
+When you find NP problem:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440
+\ls1\ilvl1\cf0 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Try to reduce it tractable parts\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Heuristics\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Solve it in exponential time but in faster way\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural
+
+\f2\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\pardirnatural\qc
+
+\f0\fs72 \cf0 Knapsack Problem\
+\pard\pardeftab720\sa240
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+The problem is mathematically formulated in the following way. Given n items to choose from, each item i 
+\f4 \expnd0\expndtw0\kerning0
+\uc0\u8712 
+\f1 \expnd0\expndtw0\kerning0
+ 0...n \uc0\u8722  1 has a value v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 and a weight w
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i
+\fs30 \expnd0\expndtw0\kerning0
+\up0 . The knapsack has a limited capacity K. Let x
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 be a variable that is 1 if you choose to take item i and 0 if you leave item i behind. Then the knapsack problem is formalized as the following optimization problem, 
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\fs30 \expnd0\expndtw0\kerning0
+maximize: \
+\pard\pardeftab720\qc
+\cf0 \expnd0\expndtw0\kerning0
+v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 x
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i \expnd0\expndtw0\kerning0
+\up0 i
+\f4 \uc0\u8712 
+\f1 0...n\uc0\u8722 1 
+\fs24 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f4\fs30 \cf0 \expnd0\expndtw0\kerning0
+\uc0\u56319 \u56320 
+\f1 \expnd0\expndtw0\kerning0
+subject to:
+\fs24 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\qc
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+w
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i
+\fs30 \expnd0\expndtw0\kerning0
+\up0 x
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 \uc0\u8804  K 
+\fs22 \expnd0\expndtw0\kerning0
+i
+\f4 \uc0\u8712 
+\f1 0...n\uc0\u8722 1 
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\fs30 \expnd0\expndtw0\kerning0
+x
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\f4\fs30 \expnd0\expndtw0\kerning0
+\up0 \uc0\u8712 
+\f1 \expnd0\expndtw0\kerning0
+\{0,1\} (i
+\f4 \expnd0\expndtw0\kerning0
+\uc0\u8712 
+\f1 \expnd0\expndtw0\kerning0
+0...n\uc0\u8722 1) 
+\fs24 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+Input Example:\
+\pard\pardeftab720
+
+\f5 \cf0 \expnd0\expndtw0\kerning0
+4 11 \
+8 4\
+10 5\
+15 8 \
+4 3 
+\f1 \expnd0\expndtw0\kerning0
+\
+Output Example:\
+19 0\
+0 0 1 1\
+\
+\pard\pardeftab720
+
+\fs48 \cf0 \expnd0\expndtw0\kerning0
+Algorithms applied:\
+DP\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+O(k,j) denotes the optimal solution to the knapsack problem with capacity k and items [1..j] \
+We are interested in finding out the best value O(K,n) \
+O(k,j) = max(O(k,j-1), v\expnd0\expndtw0\kerning0
+\dn8 j \expnd0\expndtw0\kerning0
+\up0 + O(k-w\expnd0\expndtw0\kerning0
+\dn8 j\expnd0\expndtw0\kerning0
+\up0 ,j-1)) if w\expnd0\expndtw0\kerning0
+\dn8 j \expnd0\expndtw0\kerning0
+\up0 \uc0\u8804  k! \expnd0\expndtw0\kerning0
+\dn11 \
+\expnd0\expndtw0\kerning0
+\up0 O(k,j) = O(k,j-1) otherwise! \
+O(k,0) = 0 for all k \
+Time Complexity: O(Kn)\
+\
+\pard\pardeftab720\sa240
+
+\fs28 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+\pard\pardeftab720
+
+\fs48 \cf0 \expnd0\expndtw0\kerning0
+\
+Greedy\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+Idea 1:\
+More items is best, start with small ones and take as many as you can! \
+Idea 2:\
+Valuable items are best, start with the most valuable items! \
+Idea 3: \
+Value density! dollars per kilogram \
+\pard\pardeftab720
+
+\fs48 \cf0 \expnd0\expndtw0\kerning0
+\
+Branch and Bound\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+Iterative two steps\
+\'96 branching \
+\'96 bounding\
+Branching!\
+\'96 split the problem into a number of subproblems\
+like in exhaustive search! \
+Bounding! \
+\'96 find an optimistic estimate of the best solution to the subproblem!\
+maximization: upper bound!\
+minimization: lower bound \
+\pard\pardeftab720
+
+\fs48 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs36 \cf0 \expnd0\expndtw0\kerning0
+Search Strategies\
+\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+Search Strategies! \
+\'96 depth-first, best-first, least-discrepancy! \'96 many others! \expnd0\expndtw0\kerning0
+\dn27 \
+\expnd0\expndtw0\kerning0
+\up0 Depth-first! \
+\'96 prunes when a node estimation is worse than the best found solution! \
+\'96 memory efficient! \
+Best-First! \
+\'96 select the node with the best estimation! \
+Least-Discrepancy! \
+\'96 trust a greedy heuristic \
+Assume that a good heuristic is available! \
+\'96 it makes very few mistakes!\uc0\u8232 \'96 the search tree is binary!\u8232 \'96 following the heuristic means branching 
+\b \expnd0\expndtw0\kerning0
+left
+\b0 \expnd0\expndtw0\kerning0
+!\uc0\u8232 \'96 branching 
+\b \expnd0\expndtw0\kerning0
+right 
+\b0 \expnd0\expndtw0\kerning0
+means the heuristic was wrong! \
+Limited Discrepancy Search (LDS)! \
+\'96 explore the search space in increasing order of mistakes ! \
+\'96 trusting the heuristic less and less \
+\
+Limited Discrepancy Search (LDS)! \
+\'96 explore the search space in increasing order of mistakes ! \
+\'96 trusting the heuristic less and less! \
+Explores the search space in waves! \
+\'96 no mistake!\uc0\u8232 \'96 one mistake! \'96 two mistakes! \
+\'96 .... 
+\fs24 \expnd0\expndtw0\kerning0
+\
+\
+
+\fs30 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\fs48 \cf0 \expnd0\expndtw0\kerning0
+Branch and Bound for Mixed Integer Programming\
+\pard\pardeftab720
+
+\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+Break the problems into n constraints each with variables having 0 or 1 values\
+Solve the linear relaxation \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf0 \expnd0\expndtw0\kerning0
+\'96 \'a0If the linear relaxation is worse than the best solution found so far, prune this node\expnd0\expndtw0\kerning0
+\dn11 \
+\ls2\ilvl0\expnd0\expndtw0\kerning0
+\up0 	the associated problem is suboptimal \
+\'96 \'a0If the linear relaxation is integral, we have found a feasible solution\
+	update the best feasible solution if appropriate \
+\'96 \'a0Otherwise, find an integer variable x that has a fractional value f in the linear relaxation \
+	create two subproblems \expnd0\expndtw0\kerning0
+\dn3 x <= floor(f) \expnd0\expndtw0\kerning0
+\up0 and \expnd0\expndtw0\kerning0
+\dn3 x >= ceil(f)
+\f5\fs24 \expnd0\expndtw0\kerning0
+\dn3  \expnd0\expndtw0\kerning0
+\up0 \uc0\u8232 \
+\pard\pardeftab720
+
+\f1\fs48 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\pard\pardeftab720\qc
+
+\f0\fs72 \cf0 \expnd0\expndtw0\kerning0
+Travelling Salesman Problem\
+\pard\pardeftab720\qc
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+The problem is mathematically formulated in the following way: Given a list of locations N = 0...n \uc0\u8722  1 and coordinates for each location 
+\f4 \expnd0\expndtw0\kerning0
+\uc0\u10216 
+\f1 \expnd0\expndtw0\kerning0
+x
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i
+\fs30 \expnd0\expndtw0\kerning0
+\up0 ,y
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i
+\f4\fs30 \expnd0\expndtw0\kerning0
+\up0 \uc0\u10217 
+\f1 \expnd0\expndtw0\kerning0
+ i 
+\f4 \expnd0\expndtw0\kerning0
+\uc0\u8712 
+\f1 \expnd0\expndtw0\kerning0
+ N. Let v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 i 
+\f4 \expnd0\expndtw0\kerning0
+\uc0\u8712 
+\f1 \expnd0\expndtw0\kerning0
+ N be a variable denoting the visitation order (i.e. the value of v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 is the i-th location to be visited) and let dist(l
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 1
+\fs30 \expnd0\expndtw0\kerning0
+\up0 ,l
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 2
+\fs30 \expnd0\expndtw0\kerning0
+\up0 ) be the Euclidean distance between two locations. Then the traveling salesman problem is formalized as the following optimization problem, 
+\f5\fs24 \expnd0\expndtw0\kerning0
+\
+
+\f1\fs30 \expnd0\expndtw0\kerning0
+minimize
+\f5 \expnd0\expndtw0\kerning0
+: 
+\f4 \expnd0\expndtw0\kerning0
+\up26 \uc0\u56319 \u56320 \
+\pard\pardeftab720\qc
+
+\f5 \cf0 \expnd0\expndtw0\kerning0
+\up0 Summation 
+\fs22 \expnd0\expndtw0\kerning0
+i
+\f6 \uc0\u8712 
+\f5 0...n\uc0\u8722 1\u8232 
+\fs24 \expnd0\expndtw0\kerning0
+\
+
+\fs30 \expnd0\expndtw0\kerning0
+dist(v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i
+\fs30 \expnd0\expndtw0\kerning0
+\up0 , v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i+1
+\fs30 \expnd0\expndtw0\kerning0
+\up0 ) + dist(v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 n
+\fs30 \expnd0\expndtw0\kerning0
+\up0 , v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 0
+\fs30 \expnd0\expndtw0\kerning0
+\up0 ) 
+\fs24 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+subject to:
+\f5 \expnd0\expndtw0\kerning0
+ 
+\fs22 \expnd0\expndtw0\kerning0
+\uc0\u8232 
+\fs30 \expnd0\expndtw0\kerning0
+				v
+\fs22 \expnd0\expndtw0\kerning0
+\dn6 i 
+\fs30 \expnd0\expndtw0\kerning0
+\up0 are a permutation of N\
+\
+\pard\pardeftab720
+
+\b \cf0 \ul \ulc0 MODEL:
+\b0 \ulnone \
+
+\b \ul Problem Formulation:
+\b0 \ulnone \
+\
+Formulate the travelling salesman problem for integer linear programming as follows:\
+\
+Generate all possible trips, meaning all distinct pairs of stops.\
+Calculate the distance for each trip.\
+The cost function to minimize is the sum of the trip distances for each trip in the tour.\
+The decision variables are binary, and associated with each trip, where each 1 represents a trip that exists on the tour, and each 0 represents a trip that is not on the tour.\
+To ensure that the tour includes every stop, include the linear constraint that each stop is on exactly two trips. This means one arrival and one departure from the stop.\
+
+\b \ul Calculate Distance between Points
+\b0 \ulnone \
+\
+Because there are 200 stops, there are 19,900 trips, meaning 19,900 binary variables (# variables = 200 choose 2).\
+\
+Generate all the trips, meaning all pairs of stops.\
+\
+Calculate all the trip distances, assuming that the earth is flat in order to use the Pythagorean rule.\
+\
+With this definition of the dist vector, the length of a tour is\
+\
+dist'*x\
+\
+where x is the binary solution vector. This is the distance of a tour that you try to minimize\
+\
+
+\b \ul Equality Constraints\
+
+\b0 \ulnone \
+The problem has two types of equality constraints. The first enforces that there must be 200 trips total. The second enforces that each stop must have two trips attached to it (there must be a trip to each stop and a trip departing each stop).\
+\
+Specify the first type of equality constraint, that you must have nStops trips, in the form Aeq*x = beq.\
+\
+To specify the second type of equality constraint, that there needs to be two trips attached to each stop, extend the Aeq matrix as sparse.\
+\
+\
+
+\b \ul Binary Bound
+\b0 \ulnone \
+\
+All decision variables are binary. Now, set the intcon argument to the number of decision variables, put a lower bound of 0 on each, and an upper bound of 1. 
+\fs24 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\b \cf0 \ul \ulc0 SOURCE CODE
+\b0 \ulnone \
+\
+def solve_mip(distanceMatrix, nodeCount):\
+\
+    solver = pywraplp.Solver('CP is fun!', pywraplp.Solver.CBC_MIXED_INTEGER_PROGRAMMING);\
+\
+    print "creating variables"\
+    nodes = range(nodeCount)\
+\
+    x = [[solver.BoolVar('x%d_%d' % (i,j)) for j in nodes] for i in nodes]\
+\
+    print "enter/exit just once"\
+    for i in nodes:\
+        solver.Add ( x[i][i] == 0 )\
+        row = x[i]\
+        solver.Add ( solver.Sum(row) == 1 )\
+        column = [x[j][i] for j in nodes]\
+        solver.Add ( solver.Sum(column) == 1 ) \
+\
+    u = [solver.IntVar(0, nodeCount - 1, 'u%d' % i) for i in nodes]\
+    solver.Add (u[0] == 0)\
+\
+    objective = solver.Objective()\
+    for i in nodes:\
+        for j in nodes:\
+            if (i != j):\
+                objective.SetCoefficient(x[i][j], distanceMatrix.get(i,j))\
+                solver.Add( u[i] - u[j] + nodeCount * x[i][j] <= (nodeCount - 1) )\
+\
+   \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc
+
+\f0\fs72 \cf0 \expnd0\expndtw0\kerning0
+Constraint Programming\
+\pard\pardeftab720
+
+\f1\fs30 \cf0 \expnd0\expndtw0\kerning0
+\
+Modelling of the problem into decision variables with a set of domains and constraints that must be satisfied in any case. Constraints are independent of each other and thus adding constraints to the problem space is easy. We need to make a choice or branch for selecting a value in the domain of the variable.\
+Choices may be wrong, then we need to backtrack. Branching means for e.g. selecting every possible values in the domain.\
+Constraints provide two purpose:\
+Feasibility Check\
+Pruning\
+\
+Constraint Propogation Algorithm\
+\
+propagate()\
+\{\
+	repeat\
+		Select a constraint c\
+		if \
+			c is infeasible given the domain store, then return failure\
+		else\
+			apply the pruning algorithm associated with c\
+	until no constraint can remove any value from the domain of its variable\
+	return success\
+\}\
+\
+\
+Some easy problems covered:\
+\
+\pard\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+1) Map Coloring\
+2) N Queens
+\b0 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+\
+Linear Constraint over integers\
+a1x1 + \'85 + anxn >= b1y1 + \'85 + bmym\
+aibj >= 0 are constants\
+xj,yi are variables with domains D(xi), D(yj)\
+\
+->Feasibility Test\
+\
+a1 max(D(x1)) + \'85 + an max (D(xn)) >= b1 min(D(y1)) + \'85 bm min(D(ym))\
+L >= R\
+\
+-> Pruning\
+\
+aixi >= R-(L-ai max D((xj))\
+bjyj <= L - (R-bi min(D(yi))\
+\
+Richness of Constraint Programming\
+\
+1) Reification\
+- the ability to transform a constraint into a 0/1 variable\
+- the variable has the value 1 if the constraint is true and 0 otherwise\
+\
+2) The basic element constraint\
+- the ability to index an array / matrix with a variable or an expression containing variables\
+\
+3) Global Constraints\
+- make modelling easier and more natural\
+- give the ability to exploit dedicated algorithms\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Eg x1=\{1,2\}  x= \{1,2\} x3 = \{1,2\}\
+\
+all_different(xi)\
+\
+is better algorithm than\
+\
+for (i=1..3)\
+	for (j=1..3)\
+		if i != j\
+		x[i] != x[j]\
+\
+Problems Solved:\
+
+\b \expnd0\expndtw0\kerning0
+\
+1) Stable Marriage\
+2) Crypto Arithmetic\
+\
+\pard\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+How to optimise in constraint programming?\
+- solve a sequence of satisfaction problems\
+- find a solution\
+- impose a constraint that the next solution must be better\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\qc
+
+\f0\fs72 \cf0 \expnd0\expndtw0\kerning0
+Source Codes:\
+\pard\pardeftab720
+
+\fs36 \cf0 \expnd0\expndtw0\kerning0
+Knapsack Problem:\
+
+\b\fs28 DP
+\b0 \
+\
+dp[0][0] = 0;\
+        for (int i = 0; i < items.length; ++i) \{\
+            for (int cur = 0; cur  <= K; ++cur) \{\
+                if (dp[i][cur] == Integer.MIN_VALUE) continue;\
+                dp[i + 1][cur] = Math.max(dp[i + 1][cur], dp[i][cur]);\
+                int weight = cur + items[i].weight;\
+                if (weight <= K) \{\
+                    dp[i + 1][weight] = Math.max(dp[i + 1][weight], dp[i][cur] + items[i].cost);\
+                \}\
+            \}\
+        \}\
+        for (int t : dp[items.length]) result = Math.max(result, t);\
+\
+
+\b Greedy
+\b0 \
+\
+Arrays.sort(this.items, new Comparator<Item>() \{\
+            public int compare(Item a, Item b) \{\
+                double here = (double) a.cost / a.weight;\
+                double there = (double) b.cost / b.weight;\
+                if (here > there) return -1;\
+                if (here < there) return 1;\
+                return 0;\
+            \}\
+        \});\
+\
+        for (int i = 0; i < items.length; i++) \{\
+            if (weight + items[i].weight <= K) \{\
+                taken[items[i].ID] = 1;\
+                value += items[i].cost;\
+                weight += items[i].weight;\
+            \} else \{\
+                taken[items[i].ID] = 0;\
+            \}\
+        \}\
+\
+\ul \
+
+\b \ulnone Branch and Bound
+\b0 \ul \
+\ulnone \
+static class Node \{\
+        int value;\
+        int room;\
+        int estimate;\
+        int at;\
+        BitSet taken;\
+        static int best = 0;\
+        static BitSet bestTaken = null;\
+\
+        Node(int value, int room, int estimate, int at) \{\
+            this.value = value;\
+            this.room = room;\
+            this.estimate = estimate;\
+            this.at = at;\
+        \}\
+\
+        public void branchAndBound(Item[] items) throws Exception\{\
+            if (this.room < 0) return;\
+            if (System.currentTimeMillis() - Knapsnack.startTime >= 1000 * 30) throw new Exception();\
+            if (this.estimate <= this.best && this.at < items.length) return;\
+            this.best = Math.max(best, this.value);\
+            if (at == items.length) \{\
+                if (this.value == this.best) \{\
+                    this.bestTaken = (BitSet) this.taken.clone();\
+                \}\
+            \} else \{\
+                Node left = new Node(this.value + items[at].cost, this.room - items[at].weight, this.estimate, at + 1);\
+                left.taken = (BitSet) this.taken.clone();\
+                left.taken.set(at);\
+\
+                Node right = new Node(this.value, this.room, this.estimate - items[at].cost, at + 1);\
+                right.taken = (BitSet) this.taken.clone();\
+\
+                left.branchAndBound(items);\
+                right.branchAndBound(items);\
+            \}\
+        \}\
+    \}
+\fs36 \
+\
+Stable Marriage:\
+\
+
+\fs28   rankMen = ranks["rankMen"]\
+  rankWomen = ranks["rankWomen"]\
+\
+  n = len(rankMen)\
+\
+  wife = [solver.IntVar(0, n - 1, "wife[%i]" % i) for i in range(n)]\
+  husband = [solver.IntVar(0, n - 1, "husband[%i]" % i) for i in range(n)]\
+\
+  for m in range(n):\
+    solver.Add(solver.Element(husband, wife[m]) == m)\
+ \
+  for w in range(n):\
+    solver.Add(solver.Element(wife, husband[w]) == w)\
+\
+  rankWomen[o,husband[o]] <\
+  for m in range(n):\
+    for o in range(n):\
+      b1 = solver.IsGreaterCstVar(\
+          solver.Element(rankMen[m], wife[m]), rankMen[m][o])\
+      b2 = (\
+          solver.IsLessCstVar(\
+              solver.Element(rankWomen[o], husband[o]), rankWomen[o][m]))\
+      solver.Add(b1 - b2 <= 0)\
+\
+  for w in range(n):\
+    for o in range(n):\
+      b1 = solver.IsGreaterCstVar(\
+          solver.Element(rankWomen[w], husband[w]), rankWomen[w][o])\
+      b2 = solver.IsLessCstVar(\
+          solver.Element(rankMen[o], wife[o]), rankMen[o][w])\
+      solver.Add(b1 - b2 <= 0)\
+\
+  solution = solver.Assignment()\
+  solution.Add(wife)\
+  solution.Add(husband)\
+\
+  db = solver.Phase(wife + husband,\
+                    solver.CHOOSE_FIRST_UNBOUND,\
+                    solver.ASSIGN_MIN_VALUE)\
+
+\fs36 Crypt Arithmetic\
+\
+
+\fs28   digits = range(0, 10)\
+  s = solver.IntVar(digits, 's')\
+  e = solver.IntVar(digits, 'e')\
+  n = solver.IntVar(digits, 'n')\
+  d = solver.IntVar(digits, 'd')\
+  m = solver.IntVar(digits, 'm')\
+  o = solver.IntVar(digits, 'o')\
+  r = solver.IntVar(digits, 'r')\
+  y = solver.IntVar(digits, 'y')\
+\
+  letters = [s, e, n, d, m, o, r, y]\
+\
+  solver.Add(1000 * s + 100 * e + 10 * n + d + 1000 * m + 100 * o + 10 * r + e ==\
+             10000 * m + 1000 * o + 100 * n + 10 * e + y)\
+\
+  solver.Add(s != 0)\
+  solver.Add(m != 0)\
+\
+  solver.Add(solver.AllDifferent(letters))\
+\
+  solver.NewSearch(solver.Phase(letters,\
+                                solver.INT_VAR_DEFAULT,\
+                                solver.INT_VALUE_DEFAULT))\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720
+
+\fs72 \cf0 References\
+\
+\pard\pardeftab720
+
+\fs36 \cf0 1) Automata course by Jeff Ullman from Stanford University (Coursera)\
+\
+2) Algorithms Design and Analysis by Tim Roughgarden from Stanford University (Coursera)\
+\
+3) Discrete Optimisation by Professor Pascal Van Hentenryck (Coursera)\
+\
+4) {\field{\*\fldinst{HYPERLINK "https://code.google.com/p/or-tools/"}}{\fldrslt https://code.google.com/p/or-tools/}}}
